@@ -1,0 +1,15 @@
+##Class Files
+*.class
+*.project
+*.tomcatplugin
+*.#webclasspath
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+#Directories#
+WEB-INF/
+work/
+src/main/webapp/WEB-INF/classes/

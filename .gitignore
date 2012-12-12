@@ -10,6 +10,5 @@
 *.ear
 
 #Directories#
-WEB-INF/
 work/
 src/main/webapp/WEB-INF/classes/

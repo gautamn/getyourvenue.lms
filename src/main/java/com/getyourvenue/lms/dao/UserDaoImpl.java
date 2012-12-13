@@ -33,8 +33,8 @@ public class UserDaoImpl implements IUserDao {
 		for(Object o: results){
 			Map<?,?> map = (HashMap<?,?>)o;
 			User user = new User();
-			user.setUserId(((Integer)map.get("user_id")).toString());
-			user.setUserName((String)map.get("username"));
+			//user.setUserId(((Integer)map.get("user_id")).toString());
+			//user.setUserName((String)map.get("username"));
 			userList.add(user);
 		}
 		return userList;

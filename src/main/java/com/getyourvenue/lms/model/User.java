@@ -8,33 +8,29 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "admin_users")
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 8496087166198616020L;
-	private String userId;
-	private String userName;
+	private String email;
+	private String password;
 
 	@Id
-	@Column(name = "user_id")
-	public String getUserId() {
-
-		return userId;
+	@Column(name = "email")
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUserId(String userId) {
-
-		this.userId = userId;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	@Column(name = "username", nullable = false)
-	public String getUserName() {
-
-		return userName;
+	@Column(name = "password", nullable = false)
+	public String getPassword() {
+		return password;
 	}
 
-	public void setUserName(String userName) {
-
-		this.userName = userName;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }

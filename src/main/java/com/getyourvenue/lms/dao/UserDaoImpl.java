@@ -31,12 +31,17 @@ public class UserDaoImpl implements IUserDao {
 		List<?> results = jdbcTemplate.queryForList(sql);
 		
 		for(Object o: results){
-			Map<?,?> map = (HashMap<?,?>)o;
 			User user = new User();
 			//user.setUserId(((Integer)map.get("user_id")).toString());
 			//user.setUserName((String)map.get("username"));
 			userList.add(user);
 		}
 		return userList;
+	}
+
+	@Override
+	public boolean isValidUser(String emailid, String password) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

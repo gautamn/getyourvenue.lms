@@ -5,7 +5,12 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<mapping class="com.getyourvenue.lms.model.User" />
+		<mapping class="com.getyourvenue.lms.model.LeadHeader" />
+    	<mapping class="com.getyourvenue.lms.model.LeadHistory" />
+    	<mapping class="com.getyourvenue.lms.model.LeadAlliedService" />
+    	<mapping class="com.getyourvenue.lms.model.LeadContactInfo" />
+    	<mapping class="com.getyourvenue.lms.model.EnumerationType" />
+    	<mapping class="com.getyourvenue.lms.model.Enumeration" />
 	</session-factory>
 
 </hibernate-configuration>
